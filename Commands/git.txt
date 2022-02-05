@@ -7,9 +7,4 @@ git reset
 
 command for undo git commit 
 
-git head@
-
-
-
-
-pagal hai kya
+git reset HEAD~
