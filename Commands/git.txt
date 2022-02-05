@@ -1,0 +1,3 @@
+command for undo git commit 
+
+git head@
