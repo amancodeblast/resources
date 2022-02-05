@@ -1,3 +1,15 @@
+How to undo a "git add ."
+git reset <file>
+or 
+git reset
+
+
+
 command for undo git commit 
 
 git head@
+
+
+
+
+pagal hai kya
