@@ -1,10 +1,30 @@
+Useful link [https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/]
+
 How to undo a "git add ."
+for preserving the local changes and discarding the commit use
 git reset <file>
 or 
 git reset
+
+if you want to preserve the changes and want to go back to the last commited then use
+git reset --hard <last good SHA>
+
+The First option is the safest option, but often, you’ll want to “undo” the commits and the changes in one move—that’s what --hard does.
 
 
 
 command for undo git commit 
 
 git reset HEAD~
+
+
+command for undo git push 
+as if the commit never really existed (dangerous if others are working with you and might have pulled changes from your wrongly pushed ones)
+
+git reset --hard HEAD~
+git push -f
+
+
+if adding another commit but reverting the changes instead in the last commit (useful while working in colaboration)
+git revert
+git push -f
